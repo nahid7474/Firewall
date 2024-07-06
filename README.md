@@ -1,3 +1,17 @@
+Project: Deploy and Configure Azure Firewall (Premium)
+-------------------------------------------------------------------------------------
+A high-level summary acivities of this project:
+
+- Created 3 subnets within a single resource group and region (Australia East) under NahidHomeLab subscription.
+- Deployed Azure Firewall with premium SKU in the NahidHomeLab virtual network spanning all availability zones.
+- Configured a route table to direct network traffic.
+- Associated the route table with the NahidHomeLab subnet to manage traffic flow.
+- Established application rules allowing outgoing HTTP/HTTPS traffic from Azure network.
+- Implemented network firewall rules permitting DNS traffic from Azure network to external sites.
+- Set up a DNAT rule for RDP access.
+- Enabled Intrusion Detection and Prevention System (IDPS) as a premium feature to monitor inbound and outbound traffic.
+---------------------------------------------------------------------------------------------------------------------------
+
 First, I’ll create 3 subnets that I’ll need later stage to configure, deploy and manage my firewall.
 To keep things smooth, I'll keep all resouces in the same resource group and regions under my NahidHomeLab subscription.
 
@@ -83,3 +97,4 @@ Finally, as a premium feature, I will enable Intrusion Detection and Prevention 
 
 
 
+This concludes my Azure Premium Firewall Deployment project!!
